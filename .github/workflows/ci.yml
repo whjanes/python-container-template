@@ -8,5 +8,8 @@ jobs:
   #   uses: .github/workflows/build-push.yml@main
   #   with:
   #     image_name: notebook
+  runs-on: ubuntu-latest
+
+  steps:
     - name: test proper access layer 1
       runs: echo bing bong
