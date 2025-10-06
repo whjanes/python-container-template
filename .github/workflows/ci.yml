@@ -1,0 +1,11 @@
+name: Build My Image
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: .github/workflows/build-push.yml@main
+    with:
+      image_name: notebook

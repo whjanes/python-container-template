@@ -1,4 +1,4 @@
-# base-container-template
+# python-container-template
 
 This project provides a **ready-to-use container image** for running Python code and Jupyter notebooks.  
 It includes system dependencies (ODBC 18 driver, etc.) and is easily extensible via `requirements.txt` and the `Dockerfile`.

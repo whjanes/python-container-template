@@ -1,0 +1,19 @@
+name: Build & Push (Reusable)
+
+on:
+  workflow_call:
+    inputs:
+      image_name: { type: string, required: true }   # e.g., myimage
+
+permissions:
+  contents: read
+  packages: write   # needed for GHCR
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Login to registry
+        run: echo ${{ inputs.image_name}}
+
