@@ -1,3 +1,18 @@
+name: Push Docker image
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  but:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1st layer
+        run: echo 1st layer and such
+
 # name: Build My Image
 # on:
 #   push:
@@ -14,17 +29,3 @@
 #     - name: test proper access layer 1
 #       runs: echo bing bong
 
-name: Push Docker image
-
-on:
-  workflow_dispatch:
-  push:
-    branches: [ main ]
-
-jobs:
-  but:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: 1st layer
-        run: echo 1st layer and such
