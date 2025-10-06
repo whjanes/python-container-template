@@ -6,7 +6,10 @@ on:
     branches: [ main ]
 
 jobs:
-  but:
+  build:
+    uses: .github/workflows/build-push.yml@main
+    with:
+      image_name: notebook
     runs-on: ubuntu-latest
 
     steps:
