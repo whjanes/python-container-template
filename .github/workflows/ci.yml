@@ -1,15 +1,29 @@
-name: Build My Image
+# name: Build My Image
+# on:
+#   push:
+#     branches: [ main ]
+
+# jobs:
+#   build:
+#   #   uses: .github/workflows/build-push.yml@main
+#   #   with:
+#   #     image_name: notebook
+#   runs-on: ubuntu-latest
+
+#   steps:
+#     - name: test proper access layer 1
+#       runs: echo bing bong
+
+name: Build and Push Docker image
+
 on:
   push:
     branches: [ main ]
 
 jobs:
   build:
-  #   uses: .github/workflows/build-push.yml@main
-  #   with:
-  #     image_name: notebook
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: test proper access layer 1
-      runs: echo bing bong
+    steps:
+      - name: 1st layer
+        run: echo 1st layer and such
