@@ -7,10 +7,10 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     uses: .github/workflows/build-push.yml@main
     with:
       image_name: notebook
-    runs-on: ubuntu-latest
 
     steps:
       - name: 1st layer
