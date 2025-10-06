@@ -21,7 +21,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  but:
     runs-on: ubuntu-latest
 
     steps:
